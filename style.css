@@ -268,7 +268,8 @@ header{
     background-repeat: no-repeat;
     
 }
-.main-about .about-heading{
+.main-about .about-heading
+{
 
     text-align: center;
     font-size: 43px;
