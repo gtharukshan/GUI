@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="loginstyles.css">
+    <script src="loginscript.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Create an Account</h1>
+        <p class="subtitle">
+            Already have an account? 
+            <a href="#" onclick="toggleLoginForm()">Log in</a>
+        </p>
+
+        <form action="registration.html" method="POST" id="createAccountForm">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="Terms.html" target="_blank">Terms & Conditions</a></label>
+            </div>
+            <button type="submit" class="button">Create Account</button>
+        </form>
+
+        <div id="loginForm" class="login-form">
+            <h2>Log in</h2>
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" name="loginUsername" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="button">Log in</button>
+            </form>
+        </div>
+
+        <div>
+            <p>Or create an account with</p>
+            <button class="google-button" onclick="window.location.href='https://accounts.google.com/'">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google Logo">
+                Google
+            </button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border-bottom:5px solid;
+    color:black;
+    font-weight: bold;
+    background-color: #f2faf5;
+    background-image: url(images/backgroung-pattern-1.png);
+}
+
+.header {
+    background-color: #17181D;
+    color: #ffe4b9;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid  #e09145;
+}
+
+.btn1{
+
+    background: #3f4b15;
+    color:  #cac7b1;
+}
+.btn1:hover{
+    background-color:  #6E0D25;
+    color: #ffe4b9;
+}
+.btn{
+
+    background-color: #e09145;
+    color:#17181D;
+}
+.btn:hover{
+    background-color:#ffe4b9;
+    color:#17181D;
+}
+h2{
+    color:#6E0D25;
+    font-weight: bold ;
+}
+.header h1 {
+    margin: 0;
+}
+
+.header .icons button {
+    margin: 0 5px;
+}
+
+section {
+    padding: 15px;
+    border-bottom: 3px solid #6E0D25 ;
+}
+
+h2 {
+    margin-top: 0;
+}
+.personal-details
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.age-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.age-group input {
+    width: 30%;
+}
+
+
+.registration-section, .home-address, .next-of-kin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.registration-section div, .home-address .column, .next-of-kin .column {
+    width: 30%;
+}
+@media (max-width: 768px) {
+    .payer-information.personal-details.home-address .column, .next-of-kin .column {
+        flex: 1 1 100%; 
+    }
+}
+.payer-information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}

@@ -181,7 +181,7 @@ header{
 .technology{
     margin-top: 0;
     padding: 3rem 7%;
-    background-color: #17181D;
+    background-color: #17181D; /*#17181D8,#6E0D25,#ffe4b9*/
     background-image: url(images/backgroung-pattern-1.png);
 
 }
