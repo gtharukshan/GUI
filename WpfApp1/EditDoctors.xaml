@@ -1,0 +1,63 @@
+﻿<Window x:Class="WpfApp1.EditDoctors"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit Doctor" Height="450" Width="500"
+        Background="White" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+
+    <Grid Margin="20">
+        <Border CornerRadius="10" Background="White" Padding="20" BorderBrush="Black" BorderThickness="2">
+            <StackPanel>
+
+                <!-- Title -->
+                <TextBlock Text="Edit Doctor Details" FontSize="22" FontWeight="Bold" Foreground="Black" 
+                           HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+                <!-- Doctor ID (Disabled for editing) -->
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <TextBlock Text="Doctor ID:" Width="130" Foreground="Black" FontWeight="Bold"/>
+                    <TextBox x:Name="DoctorIdBox" Width="250" Height="30" BorderBrush="Blue" BorderThickness="2"
+                             Background="White" Foreground="Black" Padding="5" />
+                </StackPanel>
+
+                <!-- Name -->
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <TextBlock Text="Name:" Width="130" Foreground="Black" FontWeight="Bold"/>
+                    <TextBox x:Name="NameBox" Width="250" Height="30" BorderBrush="Blue" BorderThickness="2"
+                             Background="White" Foreground="Black" Padding="5"/>
+                </StackPanel>
+
+                <!-- Specialization -->
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <TextBlock Text="Specialization:" Width="130" Foreground="Black" FontWeight="Bold"/>
+                    <TextBox x:Name="SpecializationBox" Width="250" Height="30" BorderBrush="Blue" BorderThickness="2"
+                             Background="White" Foreground="Black" Padding="5"/>
+                </StackPanel>
+
+                <!-- Phone Number -->
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <TextBlock Text="Phone Number:" Width="130" Foreground="Black" FontWeight="Bold"/>
+                    <TextBox x:Name="PhoneNumberBox" Width="250" Height="30" BorderBrush="Blue" BorderThickness="2"
+                             Background="White" Foreground="Black" Padding="5"/>
+                </StackPanel>
+
+                <!-- Email -->
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <TextBlock Text="Gmail:" Width="130" Foreground="Black" FontWeight="Bold"/>
+                    <TextBox x:Name="EmailBox" Width="250" Height="30" BorderBrush="Blue" BorderThickness="2"
+                             Background="White" Foreground="Black" Padding="5"/>
+                </StackPanel>
+
+                <!-- Buttons -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20,15,0,0">
+                    <Button Content="Edit" Width="120" Height="40" Background="Green" Foreground="White" 
+                            FontWeight="Bold" Click="SaveDoctorButton_Click" Margin="10" BorderThickness="0"
+                            Cursor="Hand"/>
+                    <Button Content="Cancel" Width="120" Height="40" Background="Black" Foreground="White" 
+                            FontWeight="Bold" Click="CancelButton_Click" Margin="10" BorderThickness="0"
+                            Cursor="Hand"/>
+                </StackPanel>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
