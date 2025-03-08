@@ -1,5 +1,67 @@
-<html>
-    <head>
-       <title>Tharukshan</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | HealthSync</title>
+    <link rel="stylesheet" href="appoinment.css">
+</head>
+<body>
+
+    <div class="appointment-container">
+        <h2>Book an Appointment</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Appointment Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="department">Select Department</label>
+                <select id="department" name="department" required>
+                    <option value="">Choose a Department</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="general">General Consultation</option>
+                </select>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="doctor">Select Doctor</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">Choose a Doctor</option>
+                    <option value="dr_smith">Dr. Smith - Cardiology</option>
+                    <option value="dr_jones">Dr. Jones - Neurology</option>
+                    <option value="dr_williams">Dr. Williams - Orthopedics</option>
+                    <option value="dr_brown">Dr. Brown - Pediatrics</option>
+                </select>
+            </div>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+
+</body>
 </html>
